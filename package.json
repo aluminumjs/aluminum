@@ -1,0 +1,33 @@
+{
+  "name": "aluminum",
+  "version": "0.0.0",
+  "description": "An easy-to-configure, open-source Node.js web server",
+  "scripts": {
+    "test": "npx eslint ./"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NovaDevelopment/aluminum.git"
+  },
+  "keywords": [
+    "server",
+    "web",
+    "server",
+    "prebuilt",
+    "pre-built"
+  ],
+  "author": "Benjamin Zelnick",
+  "license": "AGPL-3.0-only",
+  "bugs": {
+    "url": "https://github.com/NovaDevelopment/aluminum/issues"
+  },
+  "homepage": "https://github.com/NovaDevelopment/aluminum#readme",
+  "devDependencies": {
+    "eslint": "^7.2.0",
+    "eslint-config-standard": "^14.1.1",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1"
+  }
+}
