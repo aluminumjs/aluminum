@@ -14,7 +14,7 @@ An easy-to-configure, open-source Node.js web server
 ### Prerequisites
 - Git
 - Node.js (latest LTS version)
-- NPM (typically included in a Node installation)
+- Yarn
 
 ### Installing Aluminum
 
