@@ -102,3 +102,6 @@ dist
 
 # TernJS port file
 .tern-port
+
+# Sphinx documentation build folder (documentation is built automatically by Read the Docs---see https://readthedocs.org/ ---and is published automatically to https://aluminumjs.rtfd.io/)
+docs/_build
