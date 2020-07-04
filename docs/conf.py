@@ -56,5 +56,5 @@ html_logo = './logo-white.png'
 html_static_path = ['_static']
 
 html_theme_options = {
-    'logo_only': True,
+    'logo_only': True
 }
