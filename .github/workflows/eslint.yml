@@ -28,7 +28,8 @@ jobs:
           # Set always-auth in npmrc
           always-auth: true # optional, default is false
           # Version Spec of the version to use.  Examples: 12.x, 10.15.1, >=10.15.0
-          node-version: lts # optional
+          node-version: 12.x # optional
+          check-latest: true
 
       - name: Install dependencies
         run: yarn --frozen-lockfile
