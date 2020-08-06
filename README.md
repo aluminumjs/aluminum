@@ -1,6 +1,5 @@
 [![JavaScript Style Guide](https://cdn.rawgit.com/standard/standard/master/badge.svg)](https://github.com/standard/standard)
 
-[![Build Status](https://travis-ci.com/NovaDevelopment/aluminum.svg?branch=master)](https://travis-ci.com/NovaDevelopment/aluminum)
 [![Documentation Status](https://readthedocs.org/projects/aluminumjs/badge/?version=latest)](https://aluminumjs.readthedocs.io/en/latest/?badge=latest)
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/novadevelopment/aluminum)
 
