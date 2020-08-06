@@ -30,7 +30,7 @@ An easy-to-configure, open-source Node.js web server
 
   > :bulb: **Tip**: To save disk space, you may want to use the `-depth` option to limit the number of commits that are cloned.
 
-  - **[RECCOMENDED]** For the latest Aluminum release
+  - **[RECOMMENDED]** For the latest Aluminum release
   ```shell
   git clone --branch "latest" "https://github.com/NovaDevelopment/aluminum.git" "./";
   ```
