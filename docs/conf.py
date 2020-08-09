@@ -58,5 +58,6 @@ html_favicon = './favicon.ico'
 html_static_path = ['_static']
 
 html_theme_options = {
-    'logo_only': True
+    'logo_only': True,
+    'style_external_links': True
 }
