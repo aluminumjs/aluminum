@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "description": "An easy-to-configure, open-source Node.js web server",
   "scripts": {
-    "test": "npx eslint ./"
+    "pretest": "npx eslint --ignore-path .gitignore ./"
   },
   "repository": {
     "type": "git",
