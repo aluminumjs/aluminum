@@ -23,7 +23,7 @@ It also offers several unique and useful features:
 * **Highly Customizable:** Use an official extension, a community-contributed one, or make your own.
 * **Integrated Authentication Server:** Verify end users' identity without leaving the Aluminum platform.
 * **PHP support:** If you're uncomfortable using Node.js for server-side scripting, Aluminum is also compatible with PHP.
-* **And more:** Math rendering, network based time synchronization, simplified cryptography, etc.
+* **And more:** Remote system resource monitor, network based time synchronization, math rendering, simplified cryptography, etc.
 
 
 .. toctree::
