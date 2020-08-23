@@ -36,6 +36,7 @@ To navigate the documentation, use the sidebar to the left. To return to this pa
    :maxdepth: 2
    :caption: General Documentation
    :numbered:
+   :hidden:
 
    general/ports
 
