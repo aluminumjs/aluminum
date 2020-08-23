@@ -5,6 +5,7 @@ const os = require('os') // For retrieving operating system information (for err
 const path = require('path') // For manipulating request paths
 const mimeTypes = require('mime-types') // For sending the correct Content-Type HTTP header
 
+const ports = JSON.parse(fs.readFileSync('../../prefs/ports.json', 'utf8'))
 const errorPage = fs.readFileSync('../../defaults/errors/404.html', 'utf8') // Default error page content
 const logo = fs.readFileSync('../../logo.svg', 'utf8')
 
@@ -50,7 +51,7 @@ function serverHandler (req, res) {
           .replace(/\$osplatform\$/g, os.platform())
           .replace(/\$ostype\$/g, os.type())
           .replace(/\$osversion\$/g, os.release())
-          .replace(/\$port\$/g, '80')
+          .replace(/\$port\$/g, ports.wireHTTP.toString())
           .replace(/\$errcode\$/, err.code)
           .replace(/\$errno\$/, err.errno.toString())
           .replace(/\$errmessage\$/, err.message)
@@ -65,4 +66,4 @@ function serverHandler (req, res) {
 }
 
 const server = http.createServer(serverHandler)
-server.listen(80)
+server.listen(ports.wireHTTP)
