@@ -3,14 +3,14 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-**************
-About Aluminum
-**************
+**************************************
+Welcome to the Aluminum Documentation.
+**************************************
 
 What is Aluminum?
 =================
 
-Aluminum is a lightweight web server written entirely in `Node.js <https://www.nodejs.org>`_, "an asynchronous event-driven JavaScript runtime ... designed to build scalable network applications." It includes not only a traditional static file server, but also various other features that simplify the web development process, such as an authentication server and a network-based cryptography server.
+Aluminum is a lightweight web server written entirely in `Node.js <https://www.nodejs.org>`_, "an asynchronous event-driven JavaScript runtime ... designed to build scalable network applications." It includes not only a traditional static/dynamic web server, but also various other features that simplify the web development process, such as an authentication server and a network-based cryptography server.
 
 Why Aluminum?
 =============
@@ -26,8 +26,21 @@ It also offers several unique and useful features:
 * **PHP support:** If you're uncomfortable using Node.js for server-side scripting, Aluminum is also compatible with PHP.
 * **And more:** Remote system resource monitor, network based time synchronization, math rendering, simplified cryptography, etc.
 
+Navigating the Documentation
+============================
+
+To navigate the documentation, use the sidebar to the left. To return to this page at any time, click or tap on the Aluminum logo at the top of the sidebar.
+
 
 .. toctree::
    :maxdepth: 2
-   :caption: Contents:
+   :caption: General Documentation
    :numbered:
+
+
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Documentation by Feature
+   :numbered:
+   :hidden:
