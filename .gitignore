@@ -104,13 +104,13 @@ dist
 .tern-port
 
 # Sphinx documentation build folder (documentation is automatically built and published by Read the Docs)
-docs/_build
+/docs/_build
 
 # Aluminum preferences folder
-prefs/
+/prefs/
 
 # Aluminum resources folder
-resources/
+/resources/
 
 # Aluminum userscripts folder
-usr/
+/usr/
