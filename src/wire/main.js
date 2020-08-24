@@ -5,7 +5,7 @@ const os = require('os') // For retrieving operating system information (for err
 const path = require('path') // For manipulating request paths
 const mimeTypes = require('mime-types') // For sending the correct Content-Type HTTP header
 
-const ports = JSON.parse(fs.readFileSync('../../prefs/ports.json', 'utf8')).wire
+const ports = JSON.parse(fs.readFileSync('../../usr/prefs/ports.json', 'utf8')).wire
 const errorPage = fs.readFileSync('../../defaults/errors/404.html', 'utf8') // Default error page content
 const logo = fs.readFileSync('../../logo.svg', 'utf8')
 

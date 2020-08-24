@@ -106,8 +106,5 @@ dist
 # Sphinx documentation build folder (documentation is automatically built and published by Read the Docs)
 /docs/_build
 
-# Aluminum preferences folder
-/prefs/
-
-# Aluminum user resources folder
+# Aluminum user files folder
 /usr/
