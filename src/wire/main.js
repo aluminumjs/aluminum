@@ -51,7 +51,7 @@ function serverHandler (req, res) {
           .replace(/\$osplatform\$/g, os.platform())
           .replace(/\$ostype\$/g, os.type())
           .replace(/\$osversion\$/g, os.release())
-          .replace(/\$port\$/g, ports.wireHTTP.toString())
+          .replace(/\$port\$/g, ports.HTTP.toString())
           .replace(/\$errcode\$/, err.code)
           .replace(/\$errno\$/, err.errno.toString())
           .replace(/\$errmessage\$/, err.message)
