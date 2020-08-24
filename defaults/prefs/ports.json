@@ -1,3 +1,6 @@
 {
-  "wireHTTP": 80
+  "wire": {
+    "HTTP": 80,
+    "HTTPS": 443
+  }
 }
