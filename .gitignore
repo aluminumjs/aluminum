@@ -109,8 +109,5 @@ dist
 # Aluminum preferences folder
 /prefs/
 
-# Aluminum resources folder
-/resources/
-
-# Aluminum userscripts folder
+# Aluminum user resources folder
 /usr/
