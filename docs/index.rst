@@ -26,7 +26,7 @@ Aluminum is controlled by configuration files written in JSON. These files are i
    :numbered:
    :hidden:
 
-   general/ports
+   general/listen-json
 
 
 Features
