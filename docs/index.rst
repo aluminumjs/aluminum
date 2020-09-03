@@ -13,11 +13,11 @@ Setup and General Knowledge
 
 .. note:: In this documentation, ``/`` refers to the root directory of the Aluminum repository, except as otherwise noted.
 
-To install Aluminum, simply clone the git repository, install the dependencies automatically with ``yarn``, and copy the default configuration files into the ``/prefs`` directory. Starting the web server is as simple as typing ``yarn run start`` into your terminal.
+To install Aluminum, simply clone the git repository, install the dependencies automatically with ``yarn``, and copy the default user files from the ``/defaults`` directory to ``/usr``. Starting the server is as simple as typing ``yarn run start`` into your terminal.
 
-.. seealso:: If you want to install Aluminum, please see the installation guide for more detailed instructions.
+.. seealso:: Please see the installation guide for more detailed instructions on installing Aluminum.
 
-Aluminum is controlled by configuration files written in JSON. These files are included in the ``/prefs`` directory.
+Aluminum is controlled by JSON configuration files. These files are found in the ``/usr/prefs`` directory.
 
 
 .. toctree::
