@@ -1,0 +1,14 @@
+{
+  "protocol": "http",
+  "indexRedirect": true,
+  "errorPages": {
+    "notFound": {
+      "URI": "../../usr/resources/wire/errors/404.html",
+      "encoding": "utf8"
+    },
+    "serverError": {
+      "URI": "../../usr/resources/wire/errors/500.html",
+      "encoding": "utf8"
+    }
+  }
+}
