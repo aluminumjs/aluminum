@@ -37,7 +37,7 @@ An easy-to-configure, open-source Node.js web server
   ```shell
   git clone --branch "<release tag>" "https://github.com/NovaDevelopment/aluminum.git" "./";
   ```
-  - For the master branch (**may be unstable**; do not use in production)
+  - For the main branch (**may be unstable**; do not use in production)
   ```shell
   git clone "https://github.com/NovaDevelopment/aluminum.git" "./";
   ```
