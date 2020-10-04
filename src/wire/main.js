@@ -10,22 +10,24 @@ const preferences = JSON.parse(fs.readFileSync('../../usr/prefs/wire.json', 'utf
 
 const logo = fs.readFileSync('../../logo.svg', 'utf8')
 
-function resolveErrorPage (path, encoding) {
-  const resolution = {}
-  resolution.mimeType = mimeTypes.lookup(path)
-  if (resolution.mimeType.split('/')[0] === 'text') {
-    resolution.text = true
-    resolution.content = fs.readFileSync(path, encoding)
-  } else {
-    resolution.text = false
-    resolution.content = fs.readFileSync(path)
+class ErrorPage {
+  constructor (path, encoding) {
+    this.path = path
+    this.encoding = encoding
+    this.mimeType = mimeTypes.lookup(path)
+    if (this.mimeType.split('/')[0] === 'text') {
+      this.isText = true
+      this.content = fs.readFileSync(path, encoding)
+    } else {
+      this.isText = false
+      this.content = fs.readFileSync(path)
+    }
   }
-  return resolution
 }
 
-const errorPage = {
-  notFound: resolveErrorPage(preferences.errorPages.notFound.URI, preferences.errorPages.notFound.encoding),
-  serverError: resolveErrorPage(preferences.errorPages.serverError.URI, preferences.errorPages.serverError.encoding)
+const errors = {
+  notFound: new ErrorPage(preferences.errorPages.notFound.URI, preferences.errorPages.notFound.encoding),
+  serverError: new ErrorPage(preferences.errorPages.serverError.URI, preferences.errorPages.serverError.encoding)
 }
 
 function serverHandler (req, res) {
@@ -62,10 +64,10 @@ function serverHandler (req, res) {
       if (preferences.indexRedirect && reqURLArray[reqURLArray.length - 1] === '') {
         adjustedReqURL += 'index.html'
       }
-      res.writeHead(404, { Server: 'Aluminum Wire', 'Content-Type': errorPage.notFound.mimeType })
-      if (errorPage.notFound.text) {
+      res.writeHead(404, { Server: 'Aluminum Wire', 'Content-Type': errors.notFound.mimeType })
+      if (errors.notFound.isText) {
         res.write(
-          errorPage.notFound.content
+          errors.notFound.content
             .replace(/\$requrl\$/g, req.url)
             .replace(/\$adjrequrl\$/g, adjustedReqURL)
             .replace(/\$osplatform\$/g, os.platform())
@@ -77,16 +79,16 @@ function serverHandler (req, res) {
             .replace(/\$errmessage\$/g, readErr.message)
         )
       } else {
-        res.write(errorPage.notFound.content)
+        res.write(errors.notFound.content)
       }
       return res.end()
     }
     fs.stat(filename, function (statErr, stats) {
       if (statErr) {
-        res.writeHead(500, { Server: 'Aluminum Wire', 'Content-Type': errorPage.serverError.mimeType })
-        if (errorPage.serverError.text) {
+        res.writeHead(500, { Server: 'Aluminum Wire', 'Content-Type': errors.serverError.mimeType })
+        if (errors.serverError.isText) {
           res.write(
-            errorPage.serverError.content
+            errors.serverError.content
               .replace(/\$requrl\$/g, req.url)
               .replace(/\$osplatform\$/g, os.platform())
               .replace(/\$ostype\$/g, os.type())
@@ -97,7 +99,7 @@ function serverHandler (req, res) {
               .replace(/\$errmessage\$/g, statErr.message)
           )
         } else {
-          res.write(errorPage.serverError.content)
+          res.write(errors.serverError.content)
         }
         return res.end()
       }
