@@ -30,7 +30,9 @@ jobs:
           check-latest: true
 
       - name: Install dependencies
-        run: yarn --frozen-lockfile
+        run: |
+          echo "Yarn Version: $(yarn --version)"
+          yarn install --immutable
 
       - name: Run ESLint
         run: npx eslint ./
