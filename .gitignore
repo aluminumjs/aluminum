@@ -68,15 +68,6 @@ typings/
 # Yarn Integrity file
 .yarn-integrity
 
-# Miscellaneous Yarn files
-
-.yarn/*
-!.yarn/releases
-!.yarn/plugins
-!.yarn/sdks
-!.yarn/versions
-.pnp.*
-
 # dotenv environment variables file
 .env
 .env.test

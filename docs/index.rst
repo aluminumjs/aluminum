@@ -13,7 +13,7 @@ Setup and General Knowledge
 
 .. note:: In this documentation, ``/`` refers to the root directory of the Aluminum repository, except as otherwise noted.
 
-To install Aluminum, simply clone the git repository, install the dependencies automatically with ``yarn``, and copy the default user files from the ``/defaults`` directory to ``/usr``. Starting the server is as simple as typing ``yarn run start`` into your terminal.
+To install Aluminum, simply clone the git repository, install the dependencies automatically with ``npm``, and copy the default user files from the ``/defaults`` directory to ``/usr``. Starting the server is as simple as typing ``npm start`` into your terminal.
 
 .. seealso:: Please see the installation guide for more detailed instructions on installing Aluminum.
 

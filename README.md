@@ -13,7 +13,6 @@ An easy-to-configure, open-source Node.js web server
 ### Prerequisites
 - Git
 - Node.js (latest LTS version)
-- Yarn
 
 ### Installing Aluminum
 

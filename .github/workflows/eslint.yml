@@ -30,9 +30,7 @@ jobs:
           check-latest: true
 
       - name: Install dependencies
-        run: |
-          echo "Yarn Version: $(yarn --version)"
-          yarn install --immutable
+        run: npm ci
 
       - name: Run ESLint
         run: npx eslint ./
