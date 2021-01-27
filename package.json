@@ -31,6 +31,6 @@
     "eslint-plugin-standard": "^4.0.1"
   },
   "dependencies": {
-    "mime-types": "^2.1.27"
+    "mime-types": "^2.1.28"
   }
 }
